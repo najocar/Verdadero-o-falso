@@ -1,0 +1,86 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0px;
+}
+
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100vw;
+    margin: auto;
+    position: fixed;
+    background-color: lightcyan;
+}
+
+#puntuacion {
+    text-align: center;
+}
+
+#pregunta-caja {
+    height: 20vh;
+    width: 95vw;
+    margin: auto;
+    text-align: justify;
+    margin-top: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    height: 70vh;
+    width: 100vw;
+    gap: 1vw;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid-item {
+    padding: 30vh 20vw;
+    background-color: gray;
+}
+
+.grid-item:hover {
+    background-color: rgb(158, 158, 158);
+}
+
+.correcto {
+    padding: 30vh 20vw;
+    background-color: green;
+}
+
+.error {
+    padding: 30vh 20vw;
+    background-color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .grid-item {
+        margin: auto;
+        padding: 20%;
+        width: 90%;
+        background-color: gray;
+    }
+
+    .correcto {
+        margin: auto;
+        padding: 20%;
+        width: 90%;
+        background-color: green;
+    }
+
+    .error {
+        margin: auto;
+        padding: 20%;
+        width: 90%;
+        background-color: red;
+    }
+
+}
